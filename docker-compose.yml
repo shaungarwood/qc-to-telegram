@@ -2,9 +2,9 @@ version: '3.2'
 
 services:
   qc-python:
-    image: python:3
+    build: ./
     volumes:
       - ./:/usr/src/myapp
     working_dir: "/usr/src/myapp"
-    command: 'get-latest.py'
+    command: './get-latest.py'
     restart: always
