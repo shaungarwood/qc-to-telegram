@@ -40,6 +40,7 @@ def get_latest():
 latest_comic_num = None
 
 while True:
+    print("getting latest...")
     comic = get_latest()
     if comic:
         if not latest_comic_num:
